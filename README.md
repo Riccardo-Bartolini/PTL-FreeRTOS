@@ -268,7 +268,8 @@ In GDB, use `break main`, then `continue`. Add `ENTRY_POINT=...` to both command
 ```text
 .
 ├── README.md                  # Overview, setup, usage and API
-├── LICENSE                    # MIT license from the shared project
+├── LICENSE                    # MIT license naming the four project authors
+├── THIRD_PARTY_NOTICES.md      # Preserved upstream copyright and license notices
 ├── Makefile                   # Commands from the repository root
 ├── .github/workflows/ci.yml    # Build and regression workflow
 ├── docs/
@@ -345,4 +346,4 @@ make clean
 
 Prepared from Riccardo's local project and the shared [PTL-FreeRTOS repository](https://github.com/Gianmarco-Fabbri/PTL-FreeRTOS), with integration decisions recorded in the comparison document. Publishing a fresh copy preserves these team credits and the original license notices.
 
-The shared project is distributed under the [MIT license](LICENSE). FreeRTOS and bundled ports retain their original per-file copyright and licensing notices; see also [FreeRTOS licensing](https://freertos.org/libraries/license.html).
+The project is distributed under the [MIT license](LICENSE), naming the four Group 38 authors. Original notices from the shared repository are preserved in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). FreeRTOS and bundled ports retain their original per-file copyright and licensing notices; see also [FreeRTOS licensing](https://freertos.org/libraries/license.html).

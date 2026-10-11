@@ -7,3 +7,6 @@
 *.ld text eol=lf
 Makefile text eol=lf
 *.pdf binary
+
+# Bundled upstream kernel and ports are third-party code.
+FreeRTOS/** linguist-vendored
