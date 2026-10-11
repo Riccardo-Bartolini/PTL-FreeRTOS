@@ -1,0 +1,36 @@
+# macOS / Windows metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Generated ARM firmware and build output
+/Project/Output/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.d
+*.lst
+*.su
+
+# Generated configurations and regression logs
+/Project/main_gen.c
+/Project/logs/
+/Project/qemu_test.log
+/Project/.temp_qemu.log
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Personal editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

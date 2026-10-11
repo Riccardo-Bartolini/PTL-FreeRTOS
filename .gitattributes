@@ -1,0 +1,9 @@
+# Normalize text without changing third-party source files in the working tree.
+* text=auto
+*.c text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.ld text eol=lf
+Makefile text eol=lf
+*.pdf binary

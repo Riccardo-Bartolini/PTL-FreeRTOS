@@ -1,0 +1,29 @@
+name: Build and regression tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install ARM and QEMU tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends build-essential gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi qemu-system-arm python3
+      - name: Check Python tools
+        run: make tools_tests
+      - name: Build demo
+        run: make all
+      - name: Run firmware regressions
+        run: make tests TEST_DURATION=10
