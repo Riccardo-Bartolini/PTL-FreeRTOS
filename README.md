@@ -249,7 +249,7 @@ make tools_tests
 
 Full logs are saved in `Project/logs/<test>.log`. `Project/qemu_test.log` contains a combined summary, or full output with `SHOW=1`. `SHOW_ON_SCREEN=1` also prints the selected output. Logs and build artifacts are excluded from Git.
 
-[Local validation results](docs/VALIDATION.md) record the tested toolchain and scope. The [GitHub Actions workflow](.github/workflows/ci.yml) runs host checks, builds the demo and executes the QEMU suite after publication; its first hosted run is still to be verified.
+[Local validation results](docs/VALIDATION.md) record the tested toolchain and scope. The [GitHub Actions workflow](.github/workflows/ci.yml) runs host checks, builds the demo and executes the QEMU suite. The [hosted run on 11 October 2026](https://github.com/Riccardo-Bartolini/PTL-FreeRTOS/actions/runs/38151395052) completed successfully.
 
 ## Debugging
 
